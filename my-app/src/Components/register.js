@@ -25,7 +25,7 @@ export default class Register extends React.Component {
         var email = this.state.Email;
         var phone = this.state.Phone;
         var pic = this.state.Picture;
-        var url = 'http://localhost/ReactJs/API/user.php';
+        var url = 'http://localhost/ReactJs-With-PHP-CRUD-Application/API/user.php';
         // var formData = new FormData();
         // formData.append("Name",name);
         // formData.append("Password",psrd);

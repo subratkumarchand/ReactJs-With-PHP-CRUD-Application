@@ -15,7 +15,7 @@ export default class User extends React.Component {
 	}
 
 allUser(){
-	fetch('http://localhost/ReactJs/API/user.php')
+	fetch('http://localhost/ReactJs-With-PHP-CRUD-Application/API/user.php')
 		  .then(response => response.json())
 		  .then(data =>{ 
 			this.setState({ data:data })
@@ -23,7 +23,7 @@ allUser(){
 }
 
 dalate(e){
-	let url = `http://localhost/ReactJs/API/user.php?id=${e}`;
+	let url = `http://localhost/ReactJs-With-PHP-CRUD-Application/API/user.php?id=${e}`;
 	fetch(url, {
 		method: 'DELETE', 
 	}).then(res => res.json())

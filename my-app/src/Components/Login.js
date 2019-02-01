@@ -17,7 +17,7 @@ export default class Login extends React.Component {
     if(this.handleValidation()){
         const Email =this.state.fields.Email;
         const Password =  this.state.fields.Password;
-        let url = 'http://localhost/ReactJs/API/user.php';
+        let url = 'http://localhost/ReactJs-With-PHP-CRUD-Application/API/user.php';
         fetch(url)
         .then(function(response) {
             return response.json();

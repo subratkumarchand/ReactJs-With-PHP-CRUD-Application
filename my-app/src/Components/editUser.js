@@ -21,7 +21,7 @@ export default class EditUser extends React.Component {
    componentDidMount(){
        debugger
       const { match: { params } } = this.props;
-       let url = 'http://localhost/ReactJs/API/user.php';
+       let url = 'http://localhost/ReactJs-With-PHP-CRUD-Application/API/user.php';
         fetch(url)
          .then(response => response.json())
 		  .then(data =>{ 
