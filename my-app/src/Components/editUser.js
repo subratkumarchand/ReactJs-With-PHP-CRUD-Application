@@ -41,7 +41,7 @@ export default class EditUser extends React.Component {
           var email = this.state.data.Email;
           var phone = this.state.data.Phone;
           var pic = this.state.data.Picture;
-          var url = 'http://localhost/ReactJs/API/user.php';
+          var url = 'http://localhost/ReactJs-With-PHP-CRUD-Application/API/user.php';
           var data = {Id:id,Name: name, Email:email,Password:psrd,Phone:phone,Picture:pic};
           
           fetch(url, {
@@ -80,27 +80,22 @@ export default class EditUser extends React.Component {
             <div className="form-group">
     <label>Name</label>
     <input type="text" className="form-control"  name="Name" value={this.state.data.Name} onChange={this.handleChange.bind(this, "Name")} placeholder="Enter name"/>
-    <small className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group">
     <label>Phone Number</label>
     <input type="number" className="form-control" name="Phone" value={this.state.data.Phone} onChange={this.handleChange.bind(this, "Phone")} placeholder="Phone Number"/>
-    <small className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group">
     <label>Email</label>
     <input type="email" className="form-control" name="Email" value={this.state.data.Email}  onChange={this.handleChange.bind(this, "Email")} placeholder="Enter Email"/>
-    <small className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group">
     <label>Password</label>
     <input type="password" className="form-control" name="Password" value={this.state.data.Password}  onChange={this.handleChange.bind(this, "Password")} placeholder="Password"/>
-    <small className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group">
     <label>Picture</label>
     <input type="file" name="Picture"  onChange={this.handleChange.bind(this, "Picture")} className="form-control-file"/>
-    <small className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   
   <button type="submit" className="btn btn-primary">Update</button>
